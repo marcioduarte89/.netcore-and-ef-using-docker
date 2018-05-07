@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  dotnetcore.and.sql:
+    image: dotnetcoreandsql
+    build:
+      context: ./DotNetCore.And.SQL
+      dockerfile: Dockerfile
+    ports:
+      - "9003:80"
+  db:
+    image: "microsoft/mssql-server-linux"
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "5434:1433"

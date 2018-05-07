@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/dotnetcore-ci-cd/.vs/dotnetcore-ci-cd/v15/Server/sqlite3
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+.vs
